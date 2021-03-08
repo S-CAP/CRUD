@@ -17,6 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
 
     $result = mysqli_query($conn, $sql);
     if ($result) {
-        echo "user add";
+        echo "A NEW ENTRY IS ADDED";
     }
 }

@@ -27,29 +27,29 @@
 
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title  ">NEW user</h4>
+                        <h4 class="modal-title  ">New User</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
 
                     </div>
                     <div class="modal-body">
-                        <form method="POST" id="frm">
+                        <form method="POST" id="frm" autocomplete="off">
 
                             <div class="form-group">
                                 <label for="name">Enter Name</label>
-                                <input type="text" name="name" id="name" class="form-control" placeholder="Enter name" required>
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Enter name" autocomplete="false">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" name="emailid" id="email" class="form-control" placeholder="Enter email" required>
+                                <input type="email" name="emailid" id="email" class="form-control" placeholder="Enter email" autocomplete="false">
                             </div>
 
                             <div class=" form-group">
                                 <label for="name">Password</label>
-                                <input type="password" name="password" id="pass" class="form-control" placeholder="Enter password" required>
+                                <input type="password" name="password" id="pass" class="form-control" placeholder="Enter password" autocomplete="false">
                             </div>
                             <div class=" form-group">
                                 <label for="number">Phone</label>
-                                <input type="number" name="phone" id="number" class="form-control" placeholder="phone" required>
+                                <input type="number" name="phone" id="number" class="form-control" placeholder="phone" autocomplete="false">
                             </div>
 
                             <div class=" form-group">
@@ -76,9 +76,11 @@
                     <th scope="col">Name</th>
                     <th scope="col">Phone</th>
                     <th scope="col">Email</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="data">
 
             </tbody>
         </table>

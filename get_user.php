@@ -1,15 +1,16 @@
 <?php
- include("connection.php");
+include("connection.php");
 
- $query = "SELECT * FROM ajax";
 
- $sql = mysqli_query($conn,$query);
+$query = "SELECT * FROM ajax where email != '' AND status = '1'";
 
- $json = array();
+$sql = mysqli_query($conn, $query);
 
- while($data = mysqli_fetch_assoc($sql)){
-     $json[] = $data;
- }
- $record["userdata"] = $json;
+$json = array();
 
- echo json_encode($record);
+while ($data = mysqli_fetch_assoc($sql)) {
+    $json[] = $data;
+}
+$record["userdata"] = $json;
+
+echo json_encode($record);
