@@ -13,3 +13,13 @@
 
             </tbody>
         </table> -->
+
+        <?php
+
+include("connection.php");
+
+$id = $_POST['id'];
+
+$del = "DELETE FROM ajax where id = '$id' ";
+
+$result = mysqli_query($conn, $result);
