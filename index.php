@@ -13,7 +13,7 @@
 <body>
 
 
-    <div class="container mt-5 test">
+    <div class="container mt-5 devcls">
 
         <div class=" alert alert-info text-center mb-5">
             <h2>CRUD OPERATION</h2>
