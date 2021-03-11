@@ -112,7 +112,6 @@ $(document).ready(function () {
             method: "POST",
             data: $("#myfrm").serialize(),
             success: function(response){
-                console.log(response);
                 getUser();
                 $("#Modal").modal("hide");
                 $('form').trigger('reset');
