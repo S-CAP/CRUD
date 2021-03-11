@@ -37,24 +37,76 @@
                             <div class="form-group">
                                 <label for="name">Enter Name</label>
                                 <input type="text" name="name" id="name" class="form-control" placeholder="Enter name" autocomplete="false">
+                                
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <input type="email" name="emailid" id="email" class="form-control" placeholder="Enter email" autocomplete="false">
+                               
                             </div>
 
                             <div class=" form-group">
                                 <label for="name">Password</label>
                                 <input type="password" name="password" id="pass" class="form-control" placeholder="Enter password" autocomplete="false">
-                            </div>
+                                
+                                </div>
                             <div class=" form-group">
                                 <label for="number">Phone</label>
                                 <input type="number" name="phone" id="number" class="form-control" placeholder="phone" autocomplete="false">
+                                
                             </div>
 
                             <div class=" form-group">
 
                                 <button type="button" id="addbutton" class="btn btn-primary">Add user</button>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class=" modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- edit table -->
+        <div id="Modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title  ">EDIT</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body">
+                        <form method="POST" id="myfrm" autocomplete="off">
+
+                            <div class="form-group">
+                            <input type="hidden" name="nid" id= "vid">
+                                <label for="name">Name</label>
+                                <input type="text" name="Name" id="Name" class="form-control" placeholder="Enter name" autocomplete="false">
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="emailid" id="emailid" class="form-control" placeholder="Enter email" autocomplete="false">
+                               
+                            </div>
+
+                           
+                            <div class=" form-group">
+                                <label for="number">Phone</label>
+                                <input type="number" name="phone" id="phone" class="form-control" placeholder="phone" autocomplete="false">
+                                
+                            </div>
+
+                            <div class=" form-group">
+
+                                <button type="button" id="editbutton" class="btn btn-primary">EDIT</button>
                             </div>
 
                         </form>
@@ -86,6 +138,7 @@
         </table>
 
     </div>
+
 
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
