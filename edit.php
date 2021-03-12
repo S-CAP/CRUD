@@ -1,7 +1,7 @@
 <?php
 include("connection.php");
 $id =$_POST['nid'];
-$name =$_POST['Name'];
+$name =$_POST['name'];
 $number =$_POST['phone'];
 $email =$_POST['emailid'];
 
