@@ -88,7 +88,7 @@
                             <div class="form-group">
                             <input type="hidden" name="nid" id= "vid">
                                 <label for="name">Name</label>
-                                <input type="text" name="Name" id="Name" class="form-control" placeholder="Enter name" autocomplete="false">
+                                <input type="text" name="name" id="Name" class="form-control" placeholder="Enter name" autocomplete="false">
                                 
                             </div>
                             <div class="form-group">
